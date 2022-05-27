@@ -1,0 +1,160 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light
+*/
+
+
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* BODY
+------------------------------------*/
+body {
+  background-color: black;
+  color: #00120B;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+/* MENU LAYOUT
+------------------------------------*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	top:20px;
+	position: sticky;	/* MAKES THE MENU GO DOWN WHEN WE SCROLL DOWN*/
+}
+/* BUTTONS
+------------------------------------*/
+.activeButton, .button, .projectButton {
+	padding:20px;
+	margin:20px;
+	border:4px solid;
+	display:table;
+	border-radius:1em;	
+	box-shadow:2px 2px 8px 2px black;
+}
+.activeButton {
+	background:linear-gradient(to bottom, rgb(255,51,255) 0%, rgb(249,152,255) 100%);
+}
+.activeButton:hover {
+	background:linear-gradient(to top, rgb(255,51,255) 0%, rgb(249,152,255) 100%);
+}
+.button {
+	background:linear-gradient(to bottom, rgb(31,88,154) 0%, rgb(126,186,233) 100%);
+}
+.button:hover {
+	background:linear-gradient(to top, rgb(31,88,154) 0%, rgb(126,186,233) 100%);
+}
+.button:active {
+	background:linear-gradient(to bottom, rgb(21,61,107) 0%, rgb(38,137,212) 100%);
+}
+.projectButton {
+	background:linear-gradient(to bottom, rgb(0,195,45) 0%, rgb(0,142,33) 100%);
+}
+.projectButton:hover {
+	background:linear-gradient(to top, rgb(0,195,45) 0%, rgb(0,142,33) 100%);
+}
+.projectButton:active {
+	background:linear-gradient(to bottom, rgb(255,51,255) 0%, rgb(249,152,255) 100%);
+}
+/* BACKGROUND IMAGES
+------------------------------------*/
+.main_home {
+  background-image: url(../images/ruben.jpg);
+  background-size: cover;
+  background-position: top right;
+}
+.main_about_me {
+  background-image: url(../images/life.jpg);
+  background-size: cover;
+  background-position: top right;
+}
+.main_personal_works {
+  background-image: url(../images/post_it.jpg);
+  background-size: cover;
+  background-position: top right;
+}
+.main_contact {
+  background-image: url(../images/contact.jpg);
+  background-size: cover;
+  background-position: top right;
+}
+
+/* OTHER STYLES
+------------------------------------*/
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+video {
+  margin-top:10px;
+}
+audio{
+  float: right;
+  margin-top:10px;
+  margin-right:10px;
+}
+.white_text {
+  color:white;
+}
+img {
+  width: 300px;
+  border: 2px solid black;
+  border-radius:1em;
+  margin: 5px;  
+}
+.enlarge:hover{
+  cursor: zoom-in
+}
+a {
+  color: #D8E4FF;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+  color:white;
+}
+h2 {
+  font-size: 45px;
+  color:black;
+}
+h1, h2, h3, p {
+  font-weight: 400;
+  margin: 0;
+  margin-block-start:0;
+  margin-block-end:0;
+}
+h3 {
+  font-size:45px;
+}
+p {
+  font-size: 30px;
+}
+.content-wrap {			/*PLACES CONTENT IN CENTER*/
+  max-width: 700px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.enlarge:hover{			/*SHOWS IMAGES CAN BE CLICKED TO ENLARGE*/
+	cursor: zoom-in
+}
